@@ -9,7 +9,7 @@ class ActivitiesRepository:
         cursor = self.__conn.cursor()
         cursor.execute(
             ''' 
-                INSERT INTO emails_to_invite
+                INSERT INTO activities
                     (id, trip_id, title, occurs_at)
                 VALUES
                     (?, ?, ?, ?)
